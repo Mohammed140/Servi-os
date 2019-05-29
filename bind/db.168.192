@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	dominio43.com.br. root.dominio43.com.br. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	servidor1.dominio43.com.br.
+@	IN	A	192.168.43.10
+;@	IN	AAAA	::1
+10.43	IN	PTR	servidor1.dominio43.com.br.
+20.43	IN	PTR	dns2.dominio43.com.br.
+30.43	IN	PTR	cliente.dominio43.com.br.
